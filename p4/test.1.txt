@@ -1,0 +1,44 @@
+## start[1] = 0
+addiu $1, $1, 0x1
+## start[2] = 0x3
+andi $2, $2, 0x1
+## start[3] = 0x1
+ori $3, $3, 0x2
+## start[4] = 0x2
+xori $4, $4, 0x3
+## start[5] = 0x3
+slti $5, $5, 0x1
+## start[6] = 0x6
+addu $6, $6, $6
+## start[7] = 0x7
+subu $7, $7, $7
+## start[8] = 0x1
+and $8, $8, $8
+## start[9] = 0x1
+or $9, $9, $9
+## start[10] = 0x1
+xor $10, $10, $10
+## start[11] = 0x1000
+slt $11, $0, $11
+## start[12] = 0
+movz $12, $11, $0
+## start[13] = 0x1
+sll $13, $13, 1
+## start[14] = 0x4
+sra $14, $14, 2
+## start[15] = 0
+lui $15, 0x1
+## start[16] = 0x08040201
+sw $16, 0($16)
+## start[17] = 0x10
+sb $17, 0($17)
+## start[18] = 0
+lw $18, 0($16)
+## start[19] = 0
+lb $19, 0($16)
+## start[20] = 0
+lb $20, 1($16)
+## start[21] = 0
+lb $21, 2($16)
+## start[22] = 0
+lbu $22, 0($17)
